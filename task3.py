@@ -54,7 +54,7 @@ for (bbox, text, prob) in Result:
     imS = cv2.rectangle(imS, (tl[0], tl[1] - 20), (tl[0] + w, tl[1]), (200, 200, 255), -1)
     cv2.putText(imS, text, (tl[0], tl[1] - 5),
       cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 100, 0), 1)
-size, _=cv2.getTextSize(f, cv2.FONT_HERSHEY_SIMPLEX,0.4 ,1)
+size, _=cv2.getTextSize(f, cv2.FONT_HERSHEY_SIMPLEX,0.5 ,1)
 width, height = size
 
 imS = cv2.rectangle(imS, (0, 0), (width, height+2), (200, 200, 255), -1)
